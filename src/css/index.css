@@ -1,0 +1,9 @@
+@import './fonts.css';
+h1{
+  font-size: 30px;
+}
+.svg{
+  width: 40px;
+  height: 40px;
+  background: url(../images/logo.svg) no-repeat center;
+}
