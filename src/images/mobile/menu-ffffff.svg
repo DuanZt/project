@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="menu-ffffff" class="cls-1" d="M333,25h22v2H333V25Zm0,9h22v2H333V34Zm0,9h22v2H333V43Z" transform="translate(-333 -25)"/>
+</svg>

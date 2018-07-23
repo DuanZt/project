@@ -1,9 +1,65 @@
 @import "global";
-h1{
-    font-family: Roboto;
-    font-weight: 500;
-    color: green;
+
+#header{
+  position: fixed;
+  text-align: right;
+  z-index: 10;
+  max-width: 1365px;
+  margin: 15px auto;
+  left: 0;
+  right:0;
+  .ce_image{
+    position: absolute;
+    figure.image_container{
+      width:140px;
+    }
+  }
+  .mod_navigation{
+    display: inline-block;
+    li{
+      float: left;
+      list-style: none;
+      margin: 15px 0;
+      margin-right:35px;
+      a{
+        color:#fff; 
+      }
+      span{
+        color: rgba(255,255,255,0.6)
+      }
+    }
+  }
+  .mod_search{
+    margin: 11px 0;
+    display: inline-block;
+    &:hover{
+      background: #fff;
+      border-radius: 35px;
+      padding: 2px 4px 2px 15px;
+      .text{
+        width: 120px;
+      }
+      .submit{
+        background-image: url(../images/home/search-444444.svg);
+      }
+    }
+    .text{
+      border: 0;
+      width: 0;
+      outline: none;
+      padding: 0;
+    }
+
+    .submit{
+      text-indent: -9999px;
+      border:0;
+      height: 28px;
+      width: 28px;
+      background: url(../images/home/search-ffffff.svg) no-repeat center;
+    }
+  }
 }
-[duan-data-init]{
+
+#banner{
   display: none;
 }

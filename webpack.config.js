@@ -1,9 +1,9 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
-	entry: ['./src/js/index.js', "./src/scss/index.scss", "./src/css/index.css"], //入口文件
+	entry: ['./src/index.js'], //入口文件
 	output: {
-		filename: 'bundle.js', //输出文件
+		filename: 'all.js', //输出文件
 		path: __dirname + '/build' //输出目录
 	},
 	devtool: 'inline-source-map',
@@ -15,10 +15,10 @@ const config = {
 		rules: [{
 				test: /\.(c|sa|sc)ss$/, //处理css文件
 				use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader"
-        ]
+					MiniCssExtractPlugin.loader,
+					"css-loader",
+					"sass-loader"
+				]
 			},
 
 			{
@@ -43,10 +43,10 @@ const config = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "style.css",
-    }) //将css文件打包到style.css
+		// Options similar to the same options in webpackOptions.output
+		// both options are optional
+		filename: "style.css",
+		}) //将css文件打包到style.css
 	],
 };
 

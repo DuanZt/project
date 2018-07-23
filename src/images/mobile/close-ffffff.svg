@@ -1,0 +1,16 @@
+<svg id="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #444;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="椭圆_1" data-name="椭圆 1" class="cls-1" cx="12" cy="12" r="12"/>
+  <path id="_拷贝_2" data-name=" 拷贝 2" class="cls-2" d="M193.6,1455.66l-0.963.97-4.828-4.84-4.828,4.84-0.963-.97,4.828-4.84-4.828-4.83,0.963-.97,4.828,4.84,4.828-4.84,0.963,0.97-4.829,4.83Z" transform="translate(-176 -1439)"/>
+</svg>
