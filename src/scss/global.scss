@@ -1,5 +1,35 @@
+
+$orange: #ff6b00;
+
+
+.logo{
+  width:140px;
+  background: url(../images/home/logo-original-desktop.svg) no-repeat center;
+  img{
+    opacity: 0;
+  }
+}
+
+.logo-white{
+  width:140px;
+}
+
+.clear{
+  zoom:1;
+  &:after{
+    display:block;
+    clear:both;
+    content:" ";
+    visibility:hidden;
+    height:0;
+  }
+}
+
 body{
   font-size:16px;
+  background: #f0f0f0;
+  font-family: Arial, "黑体", sans-serif;
+  color: #444
 }
 h1{
   font-size: 2.5em;
@@ -7,7 +37,7 @@ h1{
 h2{
   font-size: 1.75em;
 }
-p,h3{
+p,h3,li{
   font-size: 1.125em;
 }
 
@@ -15,13 +45,164 @@ h4{
   font-size: 1em;
 }
 
+
 .flexslider{
   border:0;
   margin: 0;
   overflow: hidden;
-}
-.flex-direction-nav a:before,
-.flex-direction-nav a:after{
-  margin-top: -8px;
+  border-radius: 0;
 }
 
+.flex-direction-nav{
+  display: none;
+}
+.flex-control-nav{
+  bottom: 85px;
+}
+.flex-control-paging li a.flex-active:after{
+  width:40px;
+  display: block;
+  content: ' ';
+  border-radius: 10px;
+  overflow: hidden;
+  height: 7px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  right: 0;
+  top: 0;
+  animation: timeSlider 7s;
+-moz-animation: timeSlider 7s;	/* Firefox */
+-webkit-animation: timeSlider 7s;	/* Safari 和 Chrome */
+-o-animation: timeSlider 7s;	/* Opera */
+}
+.flex-control-paging li a.flex-active,
+.flex-control-paging li a{
+  position: relative;
+  width:40px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 7px;
+  background: rgba(255,255,255,0.3)
+}
+a.btn{
+  display: inline-block;
+  height: 40px;
+  width: 165px;
+  text-align: center;
+  border:2px solid #fff;
+  border-radius: 50px;
+  padding-right: 10px;
+  line-height: 37px;
+  transition: all 0.3s;
+-moz-transition: all 0.3s;	/* Firefox 4 */
+-webkit-transition: all 0.3s;	/* Safari 和 Chrome */
+-o-transition: all 0.3s;	/* Opera */
+  color: #fff;
+  background: url(../images/home/arrow-right-ffffff.svg) no-repeat 120px center;
+  &:hover{
+    text-decoration: none;
+    color: #444;
+    background: url(../images/home/arrow-right-444444.svg) no-repeat 120px center #fff;
+  }
+}
+
+
+#banner{
+  display: none;
+}
+
+.banner{
+  .turn{
+    background: url(../images/home/arrow-down-banner-ffffff.svg) no-repeat center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  .turn{
+    animation: turn ease-in-out 1s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: turn ease-in-out 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: turn ease-in-out 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: turn ease-in-out 1s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: turn ease-in-out 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+  }
+
+  .slides{
+    li{
+      position: relative;
+      height: 100vh;
+      background-position: 50% 50%;
+      background-size: cover;
+      .ce_text{
+        position: absolute;
+        top: 50%;
+        max-width: 1365px;
+        margin: 0 auto;
+        left:0;
+        right: 0;
+        color:#fff;
+        text-align: center;
+        transform: translateY(-50%);
+        >*{
+          margin: 25px;
+          opacity: 0;
+        }
+        
+        a{
+          @extend a.btn
+        }
+      }
+      &.flex-active-slide{
+        
+        .ce_text{
+          h1{
+            @extend .l2r;
+          }
+          p:first-of-type{
+            @extend .r2l;
+            @extend .delay-1;
+          }
+          p:last-of-type{
+            @extend .l2r;
+            @extend .delay-2;
+          }
+        }
+        
+      }
+    }
+    
+  }
+}
+
+.block {
+  overflow: unset;
+}
+
+
+.dt-slider{
+  li{
+    position: relative;
+    &.flex-active-slide figure.image_container{
+      overflow: hidden;
+      img{
+        @extend .zoomIn;
+      }
+    } 
+  }
+}
