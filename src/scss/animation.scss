@@ -419,28 +419,12 @@ to {width: 0px;}
 
 
 
-  .delay-1{
-    animation-delay: 0.5s !important; /* W3C 和 Opera */
-    -moz-animation-delay: 0.5s !important; /* Firefox */
-    -webkit-animation-delay: 0.5s !important; /* Safari 和 Chrome */
-  }
-  .delay-2{
-    animation-delay: 1s !important ;/* W3C 和 Opera */
-    -moz-animation-delay: 1s  !important;/* Firefox */
-    -webkit-animation-delay: 1s !important ;/* Safari 和 Chrome */
-  }
-  .delay-3{
-    animation-delay: 1.5s !important ;/* W3C 和 Opera */
-    -moz-animation-delay: 1.5s  !important;/* Firefox */
-    -webkit-animation-delay: 1.5s !important ;/* Safari 和 Chrome */
-  }
-  .delay-4{
-    animation-delay: 2s !important; /* W3C 和 Opera */
-    -moz-animation-delay: 2s !important; /* Firefox */
-    -webkit-animation-delay: 2s !important; /* Safari 和 Chrome */
-  }
-  .delay-5{
-    animation-delay: 2.5s !important ; /* W3C 和 Opera */
-    -moz-animation-delay: 2.5s !important ; /* Firefox */
-    -webkit-animation-delay: 2.5s !important ; /* Safari 和 Chrome */
+
+
+  @for $i from 1 through 10 {
+    .delay-#{$i} {
+      animation-delay: 0.5 * $i !important ; /* W3C 和 Opera */
+      -moz-animation-delay: 0.5 * $i !important ; /* Firefox */
+      -webkit-animation-delay: 0.5 * $i !important ; /* Safari 和 Chrome */
+    }
   }
