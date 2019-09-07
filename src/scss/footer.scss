@@ -1,0 +1,209 @@
+#block-footer{
+    .block{
+        a{
+            color: rgba(255,255,255,0.5);
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+            outline:none;
+        }
+        @include media(w980){
+            text-align: center;
+        }
+        p{
+            display: inline-block;
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+            margin:0;
+            line-height:45px;
+            color: rgba(255,255,255,0.5);
+            &:first-child{
+                @include media(w1170){
+                    margin-left:20px;
+                }
+            }
+            &:last-child{
+                float:right;
+                margin-right:15px;
+                @include media(w980){
+                    display: none;
+                }
+            }
+            a:hover{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.site-footer{
+    position: relative;
+    background-color:#231F20;
+    font-size:14px;
+    p{
+        font-size:14px;
+    }
+    .layout-container>.wrap{
+        padding:0;
+    }
+}
+.terms-of-sale{
+    #block-bartik-content{
+        li{
+            list-style: disc;
+            display: list-item;
+        }
+    }
+}
+
+.terms-of-sale, .terms-of-purchase, .terms-of-use{
+    background:#fff;
+    h2{
+        text-align: left;
+        margin-bottom:40px;
+    }
+    #block-bartik-content{
+        padding-top:80px;
+        max-width:800px;
+        margin:auto;
+        margin:0 25px;
+    }
+    #header{
+        box-shadow: none;
+        border-bottom:1px solid #ccc;
+    }
+}
+
+.terms-of-purchase{
+    // footer{
+    //     position: fixed;
+    //     width:100%;
+    //     bottom:0;
+    // }
+    #block-bartik-content{
+        @include media(w980){
+            text-align: center;
+            p{
+                text-align: left;
+            }
+        }
+        li{
+            list-style: disc;
+            display: list-item;
+            text-align: left;
+            // margin-left:20px;
+        }
+    }
+    ul{
+        padding:0;
+    }
+    ul.terms-tabs{
+        max-width:800px;
+        width:100%;
+        height:60px;
+        clear: both;
+        padding:0;
+        display: table;
+        text-align:center;
+        li{
+            list-style: none;
+            display: table-cell !important;
+
+            img{
+                float: left;
+            }
+            &:hover{
+                    background:#3a4857;
+                    a{
+                        color:#fff;
+                    }
+            }
+            cursor: pointer;
+            font-size:16px;
+            font-family:  'Roboto Regular', Arial, "\9ED1\4F53", sans-serif;
+            padding:15px 50px;
+            display: table-cell;
+            border:1px solid #918f8f;
+            border-right:none;
+            &:last-child{
+                border-right:1px solid #918f8f;
+            }
+            @include media(w980){
+                display: block !important;
+                text-align: center !important;
+                border:1px solid #918f8f;
+                border-bottom:none;
+                &:last-child{
+                    border-bottom:1px solid #918f8f;
+                }
+            }
+            // width:220px;
+            height:60px;
+            line-height:18px;
+            vertical-align: middle;
+            color:#000;
+        }
+    }
+}
+.footer-download{
+    display: none;
+}
+// .footer-download{
+//     float:right;
+//     width:30%;
+//     height:175px;
+//     border:1px solid #ccc;
+//     color:#0093af;
+//     padding:15px;
+//     margin-left:15px;
+//     position: absolute;
+//     right:0;
+//     top:0;
+//     margin-right:-150px;
+//     a{
+//         margin:auto;
+//         display: block;
+//         width:150px;
+//         height:50px;
+//         background:#ccc;
+//     }
+// }
+
+.terms-of-purchase-jilin{
+    ul.terms-tabs{
+        li:first-child{
+            background:#3a4857;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+.terms-of-purchase-hongkong{
+    ul.terms-tabs{
+        li:nth-child(2){
+            background:#3a4857;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.terms-of-purchase-uk{
+    ul.terms-tabs{
+        li:nth-child(3){
+            background:#3a4857;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.terms-of-purchase-nanchang{
+    ul.terms-tabs{
+        li:nth-child(4){
+            background:#3a4857;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
