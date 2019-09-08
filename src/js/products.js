@@ -491,7 +491,7 @@ function fixedLocate(){
 
 function addResetBtn(){
     $(".path-product #block-bartik-content .view-product .wrap .inner .block")
-    .append($(".path-product .table-wrap caption .rdiv span a.reset").clone());
+    .append($(".path-product .table-wrap caption .rdiv span a.reset").clone()).before($(".wafer-des p"));
     $(".path-product #block-bartik-content .view-product .wrap .inner .block a.reset").click(function(){
         $(".path-product .table-wrap caption .rdiv span a.reset").click(function(){
         })

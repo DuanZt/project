@@ -125,8 +125,11 @@ function homeCN(){
                         $(".field--name-field-quality-reliability-p").append("<div class=\"vccc\"><a href=\""+"/cn"+$(em).find("a").attr("href")+"\">查看化学含量表</a></div>")
                     }
                 })
-                    let $ss = $(".field--name-field-quality-reliability-p table td.center a").attr("href");
-                $(".field--name-field-quality-reliability-p table td.center a").attr("href", "/cn"+$ss);
+                $(".field--name-field-quality-reliability-p table td.center a").each((el)=>{
+                    $ss = $(el).attr("href");
+                    $(el).attr("href", "/cn"+$ss);
+                });
+                
                 $(".vccc").hide();
             }
         })
