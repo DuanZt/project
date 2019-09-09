@@ -1,5 +1,5 @@
 function homeCN(){
-    if(window.location.href.match(".com/cn")){
+    if(window.location.href.match(".com/cn") || window.location.href.match("47.52.66.169/cn") ){
         $(".home-banner .field form:first-of-type input:first-of-type")
         .attr("placeholder", "搜索")
         $(".home-banner .field form input:last-of-type").attr("value", "搜索")        
@@ -67,7 +67,7 @@ function homeCN(){
                 if($(el).text().trim()=="Automotive Grade Products"){
                     $(el).text("汽车产品")
                 }
-                if($(el).text().trim()=="Wafers"){
+                if($(el).text().trim()=="Wafer / Die"){
                     $(el).text("晶圆")
                 }
                 if($(el).text().trim()=="Transistors"){
@@ -87,7 +87,7 @@ function homeCN(){
                 if($(em).text().trim()=="Automotive Grade Products"){
                     $(em).text("汽车产品")
                 }
-                if($(em).text().trim()=="Wafers"){
+                if($(em).text().trim()=="Wafer / Die"){
                     $(em).text("晶圆")
                 }
                 if($(em).text().trim()=="Transistors"){
