@@ -6,6 +6,9 @@ function cloneOverview(){
         if(cg=="agp"){
             cg="automotive grade products"
         }
+        if(cg=="wafers"){
+            cg="wafer / die"
+        }
         $(".path-product .uf-attr-cloned").each(function(){
             if($(this).text().toLowerCase().match(cg)!=undefined){
                 let $product = $(this).parent().clone();
