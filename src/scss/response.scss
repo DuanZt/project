@@ -1,3 +1,4 @@
+$w1440:"screen and (max-width: 1440px)";
 $w1400:"screen and (max-width: 1400px)";
 $w1280:"screen and (max-width: 1280px)";
 $w1170:"screen and (max-width: 1170px)";
@@ -5,37 +6,57 @@ $w1024:"screen and (max-width: 1024px)";
 $w980:"screen and (max-width: 980px)";
 $w768:"screen and (max-width: 768px)";
 $w568:"screen and (max-width: 568px)";
-
-
-
-
+$w425:"screen and (max-width: 425px)";
+$w375:"screen and (max-width: 375px)";
 @mixin media($media) {
-    @if $media == w1400 {
-        @media #{$w1400} { @content; }
+  @if $media==w1440 {
+    @media #{$w1440} {
+      @content;
     }
-
-    @if $media == w1280 {
-        @media #{$w1280} { @content; }
+  }
+  @if $media==w1400 {
+    @media #{$w1400} {
+      @content;
     }
-
-    @if $media == w1170 {
-        @media #{$w1170} { @content; }
+  }
+  @if $media==w1280 {
+    @media #{$w1280} {
+      @content;
     }
-
-    @if $media == w1024 {
-        @media #{$w1024} { @content; }
+  }
+  @if $media==w1170 {
+    @media #{$w1170} {
+      @content;
     }
-
-    @if $media == w980 {
-        @media #{$w980} { @content; }
+  }
+  @if $media==w1024 {
+    @media #{$w1024} {
+      @content;
     }
-
-    @if $media == w768 {
-        @media #{$w768} { @content; }
+  }
+  @if $media==w980 {
+    @media #{$w980} {
+      @content;
     }
-
-    @if $media == w568 {
-        @media #{$w568} { @content; }
+  }
+  @if $media==w768 {
+    @media #{$w768} {
+      @content;
     }
-
+  }
+  @if $media==w568 {
+    @media #{$w568} {
+      @content;
+    }
+  }
+  @if $media==w425 {
+    @media #{$w425} {
+      @content;
+    }
+  }
+  @if $media==w375 {
+    @media #{$w375} {
+      @content;
+    }
+  }
 }

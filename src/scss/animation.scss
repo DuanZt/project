@@ -1,430 +1,507 @@
-@keyframes timeSlider
-{
-from {width: 40px;}
-to {width: 0px;}
+@keyframes timeSlider {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 0px;
+  }
 }
 
-@-moz-keyframes timeSlider /* Firefox */
-{
-from {width: 40px;}
-to {width: 0px;}
+@-moz-keyframes timeSlider
+/* Firefox */
+
+  {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 0px;
+  }
 }
 
-@-webkit-keyframes timeSlider /* Safari 和 Chrome */
-{
-from {width: 40px;}
-to {width: 0px;}
+@-webkit-keyframes timeSlider
+/* Safari 和 Chrome */
+
+  {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 0px;
+  }
 }
 
-@-o-keyframes timeSlider /* Opera */
-{
-from {width: 40px;}
-to {width: 0px;}
+@-o-keyframes timeSlider
+/* Opera */
+
+  {
+  from {
+    width: 40px;
+  }
+  to {
+    width: 0px;
+  }
 }
 
-@keyframes turn{
-0% {
-    transform:  translate(0px,0px)  ;
-}
-50% {
-    transform:  translate(0px,-15px)  ;
-}
-100% {
-    transform:  translate(0px,0px)  ;
-}
+@keyframes turn {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
-@-moz-keyframes turn{
-0% {
-    -moz-transform:  translate(0px,0px)  ;
-}
-50% {
-    -moz-transform:  translate(0px,-15px)  ;
-}
-100% {
-    -moz-transform:  translate(0px,0px)  ;
-}
+@-moz-keyframes turn {
+  0% {
+    -moz-transform: translate(0px, 0px);
+  }
+  50% {
+    -moz-transform: translate(0px, -15px);
+  }
+  100% {
+    -moz-transform: translate(0px, 0px);
+  }
 }
 
 @-webkit-keyframes turn {
-0% {
-    -webkit-transform:  translate(0px,0px)  ;
-}
-50% {
-    -webkit-transform:  translate(0px,-15px)  ;
-}
-100% {
-    -webkit-transform:  translate(0px,0px)  ;
-}
+  0% {
+    -webkit-transform: translate(0px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0px, -15px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+  }
 }
 
 @-o-keyframes turn {
-0% {
-    -o-transform:  translate(0px,0px)  ;
-}
-50% {
-    -o-transform:  translate(0px,-15px)  ;
-}
-100% {
-    -o-transform:  translate(0px,0px)  ;
-}
+  0% {
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    -o-transform: translate(0px, -15px);
+  }
+  100% {
+    -o-transform: translate(0px, 0px);
+  }
 }
 
 @-ms-keyframes turn {
-0% {
-    -ms-transform:  translate(0px,0px)  ;
-}
-50% {
-    -ms-transform:  translate(0px,-15px)  ;
-}
-100% {
-    -ms-transform:  translate(0px,0px)  ;
-}
+  0% {
+    -ms-transform: translate(0px, 0px);
+  }
+  50% {
+    -ms-transform: translate(0px, -15px);
+  }
+  100% {
+    -ms-transform: translate(0px, 0px);
+  }
 }
 
 /* l2r */
-.l2r{
-    animation: l2r ease 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    animation-fill-mode:forwards; /*when the spec is finished*/
-    -webkit-animation: l2r ease 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-    -moz-animation: l2r ease 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation: l2r ease 1s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation: l2r ease 1s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%;
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
-  }
-  
-  @keyframes l2r{
-    0% {
-      opacity:0;
-      transform:  translate(-200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-moz-keyframes l2r{
-    0% {
-      opacity:0;
-      -moz-transform:  translate(-200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -moz-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-webkit-keyframes l2r {
-    0% {
-      opacity:0;
-      -webkit-transform:  translate(-200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -webkit-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-o-keyframes l2r {
-    0% {
-      opacity:0;
-      -o-transform:  translate(-200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -o-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-ms-keyframes l2r {
-    0% {
-      opacity:0;
-      -ms-transform:  translate(-200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -ms-transform:  translate(0px,0px)  ;
-    }
-  }
 
+.l2r {
+  animation: l2r ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: l2r ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: l2r ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: l2r ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: l2r ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+}
 
-  /* r2l */
-  .r2l{
-    animation: r2l ease 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    -webkit-animation: r2l ease 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -moz-animation: r2l ease 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -o-animation: r2l ease 1s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -ms-animation: r2l ease 1s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%;
+@keyframes l2r {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
 
-    animation-fill-mode:forwards; /*when the spec is finished*/
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
+@-moz-keyframes l2r {
+  0% {
+    opacity: 0;
+    -moz-transform: translate(-200px, 0px);
   }
-  
-  @keyframes r2l{
-    0% {
-      opacity:0;
-      transform:  translate(200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      transform:  translate(0px,0px)  ;
-    }
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
   }
-  
-  @-moz-keyframes r2l{
-    0% {
-      opacity:0;
-      -moz-transform:  translate(200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -moz-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-webkit-keyframes r2l {
-    0% {
-      opacity:0;
-      -webkit-transform:  translate(200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -webkit-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-o-keyframes r2l {
-    0% {
-      opacity:0;
-      -o-transform:  translate(200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -o-transform:  translate(0px,0px)  ;
-    }
-  }
-  
-  @-ms-keyframes r2l {
-    0% {
-      opacity:0;
-      -ms-transform:  translate(200px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -ms-transform:  translate(0px,0px)  ;
-    }
-  }
+}
 
-
-  .zoomIn{
-    animation: zoomIn linear 7s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 50%;
-    -webkit-animation: zoomIn linear 7s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 50% 50%;
-    -moz-animation: zoomIn linear 7s;
-    -moz-animation-iteration-count: infinite;
-    -moz-transform-origin: 50% 50%;
-    -o-animation: zoomIn linear 7s;
-    -o-animation-iteration-count: infinite;
-    -o-transform-origin: 50% 50%;
-    -ms-animation: zoomIn linear 7s;
-    -ms-animation-iteration-count: infinite;
-    -ms-transform-origin: 50% 50%;
-    animation-direction:alternate;
-    -webkit-animation-direction:alternate;
-    -o-animation-direction:alternate;
-    -ms-animation-direction:alternate;
-    -moz-animation-direction:alternate;
+@-webkit-keyframes l2r {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-200px, 0px);
   }
-  
-  @keyframes zoomIn{
-    0% {
-      transform:  scaleX(1.00) scaleY(1.00) ;
-    }
-    100% {
-      transform:  scaleX(1.20) scaleY(1.20) ;
-    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
   }
-  
-  @-moz-keyframes zoomIn{
-    0% {
-      -moz-transform:  scaleX(1.00) scaleY(1.00) ;
-    }
-    100% {
-      -moz-transform:  scaleX(1.20) scaleY(1.20) ;
-    }
+}
+
+@-o-keyframes l2r {
+  0% {
+    opacity: 0;
+    -o-transform: translate(-200px, 0px);
   }
-  
-  @-webkit-keyframes zoomIn {
-    0% {
-      -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
-    }
-    100% {
-      -webkit-transform:  scaleX(1.20) scaleY(1.20) ;
-    }
+  100% {
+    opacity: 1;
+    -o-transform: translate(0px, 0px);
   }
-  
-  @-o-keyframes zoomIn {
-    0% {
-      -o-transform:  scaleX(1.00) scaleY(1.00) ;
-    }
-    100% {
-      -o-transform:  scaleX(1.20) scaleY(1.20) ;
-    }
+}
+
+@-ms-keyframes l2r {
+  0% {
+    opacity: 0;
+    -ms-transform: translate(-200px, 0px);
   }
-  
-  @-ms-keyframes zoomIn {
-    0% {
-      -ms-transform:  scaleX(1.00) scaleY(1.00) ;
-    }
-    100% {
-      -ms-transform:  scaleX(1.20) scaleY(1.20) ;
-    }
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0px, 0px);
   }
+}
 
+/* r2l */
 
-  /* b2t */
+.r2l {
+  animation: r2l ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: r2l ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: r2l ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: r2l ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: r2l ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+}
 
-  .b2t{
-    animation: b2t ease-out 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    animation-fill-mode:forwards; /*when the spec is finished*/
-    -webkit-animation: b2t ease-out 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-    -moz-animation: b2t ease-out 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation: b2t ease-out 1s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation: b2t ease-out 1s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%;
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
+@keyframes r2l {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 0px);
   }
-  
-  @keyframes b2t{
-    0% {
-      opacity:0;
-      transform:  translate(0px,30px)  ;
-    }
-    100% {
-      opacity:1;
-      transform:  translate(0px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      transform:  translate(0px,0px)  ;
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
-  
-  @-moz-keyframes b2t{
-    0% {
-      opacity:0;
-      -moz-transform:  translate(0px,30px)  ;
-    }
-    100% {
-      opacity:1;
-      -moz-transform:  translate(0px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -moz-transform:  translate(0px,0px)  ;
-    }
+}
+
+@-moz-keyframes r2l {
+  0% {
+    opacity: 0;
+    -moz-transform: translate(200px, 0px);
   }
-  
-  @-webkit-keyframes b2t {
-    0% {
-      opacity:0;
-      -webkit-transform:  translate(0px,30px)  ;
-    }
-    100% {
-      opacity:1;
-      -webkit-transform:  translate(0px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -webkit-transform:  translate(0px,0px)  ;
-    }
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
   }
-  
-  @-o-keyframes b2t {
-    0% {
-      opacity:0;
-      -o-transform:  translate(0px,30px)  ;
-    }
-    100% {
-      opacity:1;
-      -o-transform:  translate(0px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -o-transform:  translate(0px,0px)  ;
-    }
+}
+
+@-webkit-keyframes r2l {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(200px, 0px);
   }
-  
-  @-ms-keyframes b2t {
-    0% {
-      opacity:0;
-      -ms-transform:  translate(0px,30px)  ;
-    }
-    100% {
-      opacity:1;
-      -ms-transform:  translate(0px,0px)  ;
-    }
-    100% {
-      opacity:1;
-      -ms-transform:  translate(0px,0px)  ;
-    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
   }
+}
 
-
-
-
-
-
-
-
-
-
-  @for $i from 1 through 10 {
-    .delay-#{$i} {
-      animation-delay: 0.5 * $i !important ; /* W3C 和 Opera */
-      -moz-animation-delay: 0.5 * $i !important ; /* Firefox */
-      -webkit-animation-delay: 0.5 * $i !important ; /* Safari 和 Chrome */
-    }
+@-o-keyframes r2l {
+  0% {
+    opacity: 0;
+    -o-transform: translate(200px, 0px);
   }
+  100% {
+    opacity: 1;
+    -o-transform: translate(0px, 0px);
+  }
+}
+
+@-ms-keyframes r2l {
+  0% {
+    opacity: 0;
+    -ms-transform: translate(200px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0px, 0px);
+  }
+}
+
+.zoomIn {
+  animation: zoomIn linear 7s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: zoomIn linear 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: zoomIn linear 7s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: zoomIn linear 7s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: zoomIn linear 7s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-moz-keyframes zoomIn {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-o-keyframes zoomIn {
+  0% {
+    -o-transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -o-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-ms-keyframes zoomIn {
+  0% {
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+  }
+  100% {
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+/* b2t */
+
+.b2t {
+  animation: b2t ease-out 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: b2t ease-out 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: b2t ease-out 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: b2t ease-out 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: b2t ease-out 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+}
+
+@keyframes b2t {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@-moz-keyframes b2t {
+  0% {
+    opacity: 0;
+    -moz-transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes b2t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-o-keyframes b2t {
+  0% {
+    opacity: 0;
+    -o-transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate(0px, 0px);
+  }
+}
+
+@-ms-keyframes b2t {
+  0% {
+    opacity: 0;
+    -ms-transform: translate(0px, 30px);
+  }
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0px, 0px);
+  }
+}
+
+@for $i from 1 through 10 {
+  .delay-#{$i} {
+    animation-delay: #{0.5 * $i}s !important;
+    /* W3C 和 Opera */
+    -moz-animation-delay: #{0.5 * $i}s !important;
+    /* Firefox */
+    -webkit-animation-delay: #{0.5 * $i}s !important;
+    /* Safari 和 Chrome */
+  }
+}
+
+.ease {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotateZ(360deg);
+  }
+  to {
+    -moz-transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(360deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotateZ(360deg);
+  }
+  to {
+    -o-transform: rotateZ(0deg);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotateZ(360deg);
+  }
+  to {
+    -ms-transform: rotateZ(0deg);
+  }
+}

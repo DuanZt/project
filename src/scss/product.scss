@@ -1,0 +1,40 @@
+.view-product {
+  .block button.btn {
+    &:after {
+      display: none;
+      content: '';
+    }
+  }
+}
+
+table.TF th {
+  white-space: nowrap;
+}
+
+.xlsx-table table {
+  width: 1200px;
+
+  th,
+  td {
+    padding: 10px 20px;
+    border: 1px solid #d0d0d0;
+  }
+
+  th {
+    background: #0b92af !important;
+    color: #fff;
+  }
+
+  [colspan] {
+    text-align: right
+  }
+
+  &.crh [colspan] {
+    text-align: left;
+    span{
+      font-size:16px !important;
+    }
+  }
+
+
+}

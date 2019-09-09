@@ -1,0 +1,260 @@
+.path-search{
+    #header{
+        box-shadow: none;
+    }
+    div.region.region-content{
+        display: none;
+    }
+    div.messages.messages--error{
+        display: none;
+    }
+    .home-banner{
+        .field{
+            top:25%;
+            @include media(w568){
+                top:20%;
+            }
+        }
+        position: relative;
+        background-image:none;
+        h1,h3{
+            font-family:  'Roboto Medium', Arial, "\9ED1\4F53", sans-serif;
+            visibility: hidden;
+        }
+        ul li span{
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+            font-size:16px;
+        }
+        &:before{
+            z-index:0;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            background: url(../images/banner-shape.svg) no-repeat bottom;
+            opacity: 0.5;
+        }
+        #search-notice{ 
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+            font-size:14px;
+        }
+    }
+}
+
+.path-product-search, .path-cross-reference{
+    a{
+        outline:none;
+    }
+    #block-bartik-content{
+        padding-top:0;
+        min-height:100vh;
+    }
+    button.btn{
+        display: none;
+    }
+    background:#fff;
+    #header{
+        box-shadow: none;
+        border-bottom:1px solid #e0e0e0;
+    }
+}
+
+.path-product-search{
+    #block-bartik-content{
+        @include media(w1170){
+            padding: 100px 20px 0 20px;
+        }
+        h1{
+            font-size:25px;
+            font-family:  'Roboto Medium', Arial, "\9ED1\4F53", sans-serif;
+        }
+        input#edit-combine{
+            visibility: hidden;
+        }
+        #edit-actions{
+            display: none;
+        }
+        caption{
+            display: none;
+        }
+        table{
+            max-width:1140px;
+            width:100%;
+            margin:auto;
+            font-size:15px;
+            tr{
+                background: #fff !important;
+            }
+            th,td{
+                padding:10px !important;
+                line-height:22.5px !important;
+            }
+            thead{
+                font-family:  'Roboto Medium', Arial, "\9ED1\4F53", sans-serif;
+                th{
+                    background:#fff !important;
+                    border-top:none;
+                    border-left:none;
+                    border-right:none !important;
+                }
+                tr.fltrow{
+                    display: none;
+                }
+            }
+            tbody{
+                font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+                tr{
+                    td:first-child{
+                        a{
+                            color:#0093af;
+                        }
+                    }
+                }
+            }
+        }
+        ul{
+            list-style-type: disc !important;
+            list-style: disc !important;
+            list-style-position: inside;
+            li{
+                display: block;
+            }
+        }
+    }
+}
+
+.path-cross-reference{
+    #block-bartik-content{
+        .crs-table-wrapper{
+            overflow-x:auto;
+        }
+        @include media(w1170){
+            padding:100px 20px 0 20px;
+        }
+        input#edit-submit-product{
+            display: none;
+        }
+        label{
+            display: none;
+        }
+        h1{
+            font-size:18px;
+            color:#0093af;
+            padding:30px 0;
+        }
+        h3{
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+            font-size:12px;
+            color:#0093af;
+        }
+        input#edit-field-cross-reference-value{
+            border:none;
+            outline:none;
+            width:568px;
+            @include media(w568){
+                width:300px;
+            }
+            @include media(w425){
+                width:calc(100% - 20px)
+            }
+            border-bottom:1px solid #9E9E9E;
+            font-size:15px;
+            line-height:3rem;
+            &+p{
+                margin:40px 0;
+                font-size:16px;
+                margin-bottom:30px;
+            }
+        }
+        input#edit-submit-product{
+            float:left;
+            font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+        }
+    
+        table{
+            caption{
+                display: none;
+            }
+            max-width:1140px;
+            width:100%;
+            margin:auto;
+            font-size:15px;
+            tr{
+                background: #fff !important;
+            }
+            th,td{
+                padding:10px !important;
+                line-height:22.5px !important;
+                display: none;
+                &:first-child{
+                    display: block;
+                    color:#fff;
+                    width:568px;
+                    @include media(w568){
+                        width:300px;
+                    }
+                    position: relative;
+                    a{
+                        &:after{
+                            content: " ";
+                            position: absolute;
+                            left:243px;
+                            margin-top:12px;
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            font-size: 0;
+                            line-height: 0;
+                            border-bottom: solid 2px #0093af;
+                            border-left: solid 2px #0093af;
+                            margin-top: 8px;
+                            transform: rotate(-135deg);
+                            -webkit-transform: rotate(-135deg);
+                            -moz-transform: rotate(-135deg);
+                            -ms-transform: rotate(-135deg);
+                            -o-transform: rotate(-135deg);
+                            }
+                    }
+                }
+            }
+            thead{
+                tr{
+                    background:#0093af;
+                }
+                font-family:  'Roboto Medium', Arial, "\9ED1\4F53", sans-serif;
+                th{
+                    background:#0093af;
+                    border-top:none;
+                    border-left:none;
+                    border-right:none !important;
+                }
+                tr.fltrow{
+                    display: none;
+                }
+            }
+            tbody{
+                font-family:  'Roboto Light', Arial, "\9ED1\4F53", sans-serif;
+                tr{
+                    td:first-child{
+                        a{
+                            color:#0093af;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pps-table-wrapper{
+    overflow-x:auto;
+    margin-bottom:50px;
+    .click-me-drag{
+        display: none;
+        @include media(w768){
+            display: block;
+        }
+    }
+}
