@@ -12569,9 +12569,9 @@ textarea, input[type='email'], input[type='text'] {
               line-height: 33px;
               padding-left: 0px; } }
           @media screen and (max-width: 980px) {
-            .highlighted .links .field ul li:nth-child(6), .highlighted .links .field ul li:nth-child(7), .highlighted .links .field ul li:nth-child(8) {
+            .highlighted .links .field ul li:nth-child(7), .highlighted .links .field ul li:nth-child(8) {
               display: none; } }
-          .highlighted .links .field ul li:nth-child(6):hover, .highlighted .links .field ul li:nth-child(7):hover, .highlighted .links .field ul li:nth-child(8):hover {
+          .highlighted .links .field ul li:nth-child(7):hover, .highlighted .links .field ul li:nth-child(8):hover {
             background: rgba(255, 255, 255, 0.9) !important; }
           @media screen and (min-width: 981px) {
             .highlighted .links .field ul li > * {
