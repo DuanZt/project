@@ -1,5 +1,5 @@
 function homeCN(){
-    if(window.location.href.match(".com/cn") || window.location.href.match("47.52.66.169/cn") ){
+    if(window.location.href.match(".com/cn") || window.location.href.match("47.52.66.169/cn")  || window.location.href.match("localhost/cn") ){
         $(".home-banner .field form:first-of-type input:first-of-type")
         .attr("placeholder", "搜索")
         $(".home-banner .field form input:last-of-type").attr("value", "搜索")        
@@ -64,6 +64,9 @@ function homeCN(){
                 if($(el).text().trim()=="Thyristors"){
                     $(el).text("可控硅开关")
                 }
+                if($(el).text().trim()=="Module"){
+                    $(el).text("模块")
+                }
                 if($(el).text().trim()=="Automotive Grade Products"){
                     $(el).text("汽车产品")
                 }
@@ -83,6 +86,9 @@ function homeCN(){
                 }
                 if($(em).text().trim()=="Thyristors"){
                     $(em).text("可控硅开关")
+                }
+                if($(em).text().trim()=="Module"){
+                    $(em).text("模块")
                 }
                 if($(em).text().trim()=="Automotive Grade Products"){
                     $(em).text("汽车产品")
