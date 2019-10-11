@@ -40,7 +40,7 @@
     "jspdf": "^1.5.3",
     "normalize.css": "^8.0.0",
     "number-precision": "^1.2.0",
-    "table2excel.js": "^0.6.5",
+    "table2excel.js": "0.6.5",
     "xlsx": "^0.15.1"
   }
 }
