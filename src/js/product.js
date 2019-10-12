@@ -120,7 +120,8 @@ import jsPDF from 'jspdf/dist/jspdf.debug';
 
         _this.siblings("button.toPDF").click(() => {
           html2canvas(_this.siblings(".xlsx-table")[0], {
-            scale: 2
+            scale: 2,
+            y: $(_this.siblings(".xlsx-table")[0]).offset().top
           }).then(function (canvas) {
             var imgData = canvas.toDataURL('image/jpeg', 1)
             var doc = new jsPDF('p', 'mm', 'a4')
