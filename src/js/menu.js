@@ -1,5 +1,8 @@
 function dropHomemenu() {
-    let $nav = $(".header-navlist-item");
+    $(".header-navlist-item.col-1").wrapAll("<div class='header-navlist-item-group header-navlist-item-col-1'></div>");
+    $(".header-navlist-item.col-2").wrapAll("<div class='header-navlist-item-group header-navlist-item-col-2'></div>");
+    $(".header-navlist-item.col-3").wrapAll("<div class='header-navlist-item-group header-navlist-item-col-3'></div>");
+    let $nav = $(".header-navlist-item-group");
     let $home = $(".navigation >ul.menu >li:nth-child(3)");
 
     $nav.wrapAll("<div id=\"header-navlist-item-home\"></div>");

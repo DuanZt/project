@@ -70,6 +70,9 @@ function homeCN(){
                 if($(el).text().trim()=="Automotive Grade Products"){
                     $(el).text("汽车产品")
                 }
+                if($(el).text().trim()=="Silicon Carbide（SiC）"){
+                    $(el).text("碳化硅二极管")
+                }
                 if($(el).text().trim()=="Wafer / Die"){
                     $(el).text("晶圆")
                 }
@@ -95,6 +98,9 @@ function homeCN(){
                 }
                 if($(em).text().trim()=="Wafer / Die"){
                     $(em).text("晶圆")
+                }
+                if($(em).text().trim()=="Silicon Carbide（SiC）"){
+                    $(em).text("碳化硅")
                 }
                 if($(em).text().trim()=="Transistors"){
                     $(em).text("双极性晶体管")
