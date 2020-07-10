@@ -77,7 +77,7 @@ addLoading();
 //     }
 //   }
   
-//   if(window.location.href.match(".com/en")||window.location.href.match(".com/cn")||window.location.href.match(".com/user")){
+//   if(window.location.href.match(".com/en")||drupalSettings.path.currentLanguage == "zh-hans"||window.location.href.match(".com/user")){
 
 //   }else{
 //     if(document.referrer.match(".com/cn")){

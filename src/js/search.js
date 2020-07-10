@@ -20,7 +20,7 @@ function searchAutocomplete() {
               
                 if($(".path-search .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                   $(".path-search .home-banner .field div.block-unformatted").detach();
-                  if(window.location.href.match(".com/cn")){
+                  if(drupalSettings.path.currentLanguage == "zh-hans"){
                     $(".path-search .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"找到的瑞能产品个数: 0"+"</div>"+"</div>");
                   }else{
                     $(".path-search .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");
@@ -71,7 +71,7 @@ function searchAutocomplete() {
               
               if($(".path-search .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                 $(".path-search .home-banner .field div.block-unformatted").detach();
-                if(window.location.href.match(".com/cn")){
+                if(drupalSettings.path.currentLanguage == "zh-hans"){
                   $(".path-search .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"匹配的瑞能产品个数: 0"+"</div>"+"</div>");
                 }else{
                   $(".path-search .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");
@@ -98,7 +98,7 @@ function searchAutocomplete() {
       ev.preventDefault();
       let t = $(this).find("input[type='text']").val();
       if(t.trim().length>0){
-        if(window.location.href.match(".com/cn")){
+        if(drupalSettings.path.currentLanguage == "zh-hans"){
           window.location.href=window.location.href.substring(0,window.location.href.length-17)+"product-search?combine="+t;
         }else{
           window.location.href=window.location.href.substring(0,window.location.href.length-17)+"product-search?combine="+t;
@@ -110,7 +110,7 @@ function searchAutocomplete() {
       ev.preventDefault();
       let t = $(this).find("input[type='text']").val();
       if(t.trim().length>0){
-        if(window.location.href.match(".com/cn")){
+        if(drupalSettings.path.currentLanguage == "zh-hans"){
           window.location.href=window.location.href.substring(0,window.location.href.length-17)+"cross-reference?field_cross_reference_value="+t;
         }else{
           window.location.href=window.location.href.substring(0,window.location.href.length-17)+"cross-reference?field_cross_reference_value="+t;
@@ -148,7 +148,7 @@ function searchAutocomplete() {
   searchSearchTabs();
 
   function modifytitle(){
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
       $(".path-search .home-banner h1").text("瑞能搜索")
       $(".path-search .home-banner h1").css("visibility","visible")
     }else{
@@ -162,7 +162,7 @@ function searchAutocomplete() {
 
   function productSearch(){
     var res_search = $(".path-product-search #edit-combine").val();
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
       $(".path-product-search #block-bartik-content").prepend("<h1>关键字为: \'<span style=\"color:#0092af\">"+res_search+"</span>\' 的结果</h1>");
     }else{
       $(".path-product-search #block-bartik-content").prepend("<h1>Search result for:<span style=\"color:#0092af\">\'"+res_search+"\'</span></h1>");
@@ -208,7 +208,7 @@ function searchAutocomplete() {
       }
     })
     if($(".path-cross-reference #block-bartik-content table").length<1){
-      if(window.location.href.match(".com/cn")){
+      if(drupalSettings.path.currentLanguage == "zh-hans"){
         $(".path-cross-reference #block-bartik-content").append("<h4>匹配的瑞能产品个数: 0;</h4>");
       }else{
         $(".path-cross-reference #block-bartik-content").append("<h4>Matching WeEn products: 0;</h4>");
@@ -234,7 +234,7 @@ function searchAutocomplete() {
   backToprev();
 
   function crsMatch(){
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
 
     }else{
       $(".path-cross-reference #block-bartik-content input#edit-field-cross-reference-value")

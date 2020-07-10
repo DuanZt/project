@@ -143,7 +143,7 @@ function newsTabs() {
       $(".path-frontpage .news ul:last-child li.active .news-tabs-mobile-item").eq(0).addClass("active");
       let arr = new Array();
       setTimeout(function(){
-        if(window.location.href.match(".com/cn")){
+        if(drupalSettings.path.currentLanguage == "zh-hans"){
           arr[0]="cn/latest";
           arr[1]="cn/notice";
           arr[2]="cn/exhibitions";
@@ -310,7 +310,7 @@ function autoCompleted() {
     ev.preventDefault();
       var str = $(".path-frontpage .home-banner .field form.active input[type='text']").val();
       if(str.trim().length>0){
-        if(window.location.href.match(".com/cn")){
+        if(drupalSettings.path.currentLanguage == "zh-hans"){
           $.ajax({
             type: "POST",
             url: "cn/views/ajax?_wrapper_format=drupal_ajax",
@@ -325,7 +325,7 @@ function autoCompleted() {
                 
                   if($(".path-frontpage .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                     $(".path-frontpage .home-banner .field div.block-unformatted").detach();
-                    if(window.location.href.match(".com/cn")){
+                    if(drupalSettings.path.currentLanguage == "zh-hans"){
                       $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"匹配的瑞能产品个数: 0;"+"</div>"+"</div>");
                     }else{
                       $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");
@@ -352,7 +352,7 @@ function autoCompleted() {
                 
                   if($(".path-frontpage .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                     $(".path-frontpage .home-banner .field div.block-unformatted").detach();
-                    if(window.location.href.match(".com/cn")){
+                    if(drupalSettings.path.currentLanguage == "zh-hans"){
                       $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"匹配的瑞能产品个数: 0;"+"</div>"+"</div>");
                     }else{
                       $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");
@@ -376,7 +376,7 @@ function autoCompleted() {
     ev.preventDefault();
     let t = $(this).find("input[type='text']").val();
     if(t.trim().length>0){
-      if(window.location.href.match(".com/cn")){
+      if(drupalSettings.path.currentLanguage == "zh-hans"){
         window.location.href="cn/product-search?combine="+t;
       }else{
         window.location.href="product-search?combine="+t;
@@ -388,7 +388,7 @@ function autoCompleted() {
     ev.preventDefault();
     let t = $(this).find("input[type='text']").val();
     if(t.trim().length>0){
-      if(window.location.href.match(".com/cn")){
+      if(drupalSettings.path.currentLanguage == "zh-hans"){
         window.location.href="cn/cross-reference?field_cross_reference_value="+t;
       }else{
         window.location.href="cross-reference?field_cross_reference_value="+t;
@@ -418,7 +418,7 @@ function autoCompleted() {
     ev.preventDefault();
     var str1 = $(".path-frontpage .home-banner .field form.active input[type='text']").val();
     if(str1.trim().length>0){
-      if(window.location.href.match(".com/cn")){
+      if(drupalSettings.path.currentLanguage == "zh-hans"){
         $.ajax({
           type: "POST",
           url: "cn/views/ajax?_wrapper_format=drupal_ajax",
@@ -433,7 +433,7 @@ function autoCompleted() {
                 
                 if($(".path-frontpage .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                   $(".path-frontpage .home-banner .field div.block-unformatted").detach();
-                  if(window.location.href.match(".com/cn")){
+                  if(drupalSettings.path.currentLanguage == "zh-hans"){
                     $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"匹配的瑞能产品个数: 0;"+"</div>"+"</div>");
                   }else{
                     $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");
@@ -464,7 +464,7 @@ function autoCompleted() {
                 
                 if($(".path-frontpage .home-banner .field form.active").next().find(".block-unformatted").children(".views-row").length<1){
                   $(".path-frontpage .home-banner .field div.block-unformatted").detach();
-                  if(window.location.href.match(".com/cn")){
+                  if(drupalSettings.path.currentLanguage == "zh-hans"){
                     $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"匹配的瑞能产品个数: 0;"+"</div>"+"</div>");
                   }else{
                     $(".path-frontpage .home-banner .field form.active").after("<div class=\"block-unformatted\">"+"<div class=\"no-res\">"+"Matching WeEn products: 0"+"</div>"+"</div>");

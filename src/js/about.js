@@ -149,7 +149,7 @@ function alterJobform(){
 alterJobform();
 
 function aboutMemberMobile(){
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
         $("#block-bartik-content .about-member").eq(0).addClass("active");
         $("#block-bartik-content .about-team-imgs").prepend("<div class=\"about-arrow-left\"><img src=\"/sites/default/files/images/videos-left-arrow.svg\"></div>")
         $("#block-bartik-content .about-team-imgs").append("<div class=\"about-arrow-right\"><img src=\"/sites/default/files/images/videos-right-arrow.svg\"></div>")
@@ -200,7 +200,7 @@ function aboutMemberMobile(){
 aboutMemberMobile();
 
 function moveOpenPositions(){
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
         $(".about-us").hide();
         $(".about-careers >p").before($(".ideal-tabs"))
         $(".about-careers .ideal-tabs").after($(".ap-op"));

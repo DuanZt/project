@@ -1,5 +1,5 @@
 function homeCN(){
-    if(window.location.href.match(".com/cn") || window.location.href.match("47.52.66.169/cn")  || window.location.href.match("localhost/cn") ){
+    if(drupalSettings.path.currentLanguage == "zh-hans" || window.location.href.match("47.52.66.169/cn")  || window.location.href.match("localhost/cn") ){
         $(".home-banner .field form:first-of-type input:first-of-type")
         .attr("placeholder", "搜索")
         $(".home-banner .field form input:last-of-type").attr("value", "搜索")        
@@ -180,7 +180,7 @@ function homeCN(){
 homeCN();
 
 function mobileCN(){
-    if(window.location.href.match(".com/cn")){
+    if(drupalSettings.path.currentLanguage == "zh-hans"){
         $(".mobile-menu .mobile-menu-body >ul >li >a").each(function(){
             if($(this).text().trim()=="Products"){
                 $(this).text("产品")
