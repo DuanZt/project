@@ -32,7 +32,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "^3.3.7",
-    "exceljs": "^0.6.2",
+    "exceljs": "^4.3.0",
     "flexslider": "^2.7.1",
     "font-awesome": "^4.7.0",
     "html2canvas": "^1.0.0-rc.3",
